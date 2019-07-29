@@ -2,11 +2,14 @@ import React from 'react';
 import './NavBar.css';
 
 export class NavButton extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render() {
       const pages = ['home', 'blah', 'pics', 'bio', 'art'];
-      const navLinks = pages.map(page => {
+      const navLinks = pages.map((page,i) => {
         return (
-            <a href={'/' + page} className="navItem">
+            <a key={i} href={'/' + page} className="nav-item">
               {page}
             </a>
         )
@@ -17,6 +20,9 @@ export class NavButton extends React.Component {
 }
 
 export class NavBar extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <div className="hideScroll">

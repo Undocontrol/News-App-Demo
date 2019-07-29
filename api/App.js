@@ -16,9 +16,10 @@ app.use(function(req, res, next) {
   Returns top headlines for the UK
 */
 app.get('/headlines', (req, res) => {
-  request(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${token}`, (err, response, body) => {
+  request(`https://newsapi.org/v2/top-headlines?country=gb&apiKey=${token}`, (err, response, body) => {
     if (err) { return console.log(err); }
-    res.send(body)
+    let articles = JSON.parse(body).articles;
+    res.send(JSON.stringify(articles))
   });
 });
 
@@ -29,7 +30,8 @@ app.get('/filter', (req, res) => {
   const query = req.query.q
   request(`https://newsapi.org/v2/everything?q=${query}&apiKey=${token}`, (err, response, body) => {
     if (err) { return console.log(err); }
-    res.send(body)
+    let articles = JSON.parse(body).articles;
+    res.send(JSON.stringify(articles))
   });
 });
 
