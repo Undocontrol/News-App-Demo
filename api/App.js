@@ -1,6 +1,5 @@
 const express = require('express')
 const request = require('request');
-//this is essentially the API 
 const app = express()
 const port = 8080
 const token = '7854dfdaa951420e99c303c809f378a0'
