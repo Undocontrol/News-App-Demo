@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Form, Button } from 'react-bootstrap'
+import './Search.css';
 
 export class Search extends React.Component {
 

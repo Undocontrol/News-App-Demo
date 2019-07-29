@@ -1,9 +1,6 @@
-/* This will be a class based component as it’ll basically serves 
-as the wrapper component for every other component we’ll be creating subsequently:*/
-
 import React from 'react';
-import { Feed } from './Feed';
-import { Search } from './Search'
+import { Feed } from '../Feed';
+import { Search } from '../Search'
 import './App.css';
 
 class App extends React.Component {
@@ -11,11 +8,13 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      // This is a placeholder for articles retrieved from search
       articles: [],
     };
   }
 
   updateNewsFeed = (articles) => {
+    // When search results come back, pass them into the feed
     this.setState({ articles: articles })
   }
 

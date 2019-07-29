@@ -1,0 +1,61 @@
+* {  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e9eef2;
+  font-family: Helvetica,Arial,sans-serif
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+}
+
+h1 {
+  border-bottom: 1px solid #d9d9d9;
+  color: steelblue;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  max-width: calc(5 * 16rem);
+  margin: 1em auto;
+}
+
+a {
+  color: white;
+}
+
+button {
+    background-color: black;
+    background-image: linear-gradient( 135deg, rgb(57, 93, 148) 0%, rgb(77, 143, 197) 100%);
+    border: none;
+    border-width: 2px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 2.5;
+    padding: 0 1em;
+    min-width: 144px;
+    margin: 1em auto;
+    transition: all 150ms;
+}
+
+button:hover {
+  background-image: linear-gradient( 135deg, rgb(77, 143, 197) 100%)10%, rgb(57, 93, 148) 100% !important;
+  opacity: 0.75;
+}
