@@ -71,9 +71,9 @@ https://reactjs.org/docs/hello-world.html
 https://expressjs.com/en/api.html
 
 
-## Areas of improvement
+## Areas of improvement/To do
 
-If I had more time on the demo- I would have implemented Redux for use of state management. 
+I would have implemented Redux for use of state management. 
 I also would included LESS as oppose to CSS and I would have given a pop at unit testing. 
 
 Thank you very much for visiting.
